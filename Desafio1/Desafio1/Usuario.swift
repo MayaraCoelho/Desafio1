@@ -48,7 +48,6 @@ class Usuario: UIViewController {
             {
                 if(alun.status == "Ativo")
                 {
-                    print(" EU SOU FODA ATIVO ")
 
                     if(alun.uffmail != "")
                     {
@@ -83,11 +82,9 @@ class Usuario: UIViewController {
                         let alert = UIAlertController(title: "Você não posssui um uffmail", message: "E seu status está inativo", preferredStyle: UIAlertControllerStyle.Alert)
                         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
                         self.presentViewController(alert, animated: true, completion: nil)
-                        // criar as opçoes pra criar um email
                     }
 
                 }
-                // tratar quando o aluno não pode fazer email.
             }
         }
         
@@ -99,8 +96,6 @@ class Usuario: UIViewController {
     {
         
         let delimiter = ","
-        
-//        var alunos:[(nome:String, matricula:String, telefone: String, email: String, uffmail: String, status: String)]?
         
         if let data = NSData(contentsOfURL: contentsOfURL)
         {
